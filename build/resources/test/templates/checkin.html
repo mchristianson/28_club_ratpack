@@ -1,0 +1,10 @@
+<tr>
+    <td>${model.visitor.name}</td>
+    <td>${model.visitor.company}</td>
+    <td class="visiting">${model.visitor.employee.first_name} ${model.visitor.employee.last_name}</td>
+    <td>
+        <time>${new Date().format('MM/dd/yyyy h:mm aaa')}</time>
+    </td>
+    <td><a href="#" class="float_right button checkout" id="${model.visitor.id}">Sign out</a></td>
+    <a href="#" class="float_right button delete" style="display:none;" id="delete_${model.visitor.id}">Delete</a>
+</tr>
